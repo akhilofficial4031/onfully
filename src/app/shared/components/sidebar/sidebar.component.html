@@ -1,0 +1,12 @@
+<div class="sidebar">
+  <div class="sidebar-content">
+    <div class="d-flex flex-row-reverse close_btn">
+      <i class="fa fa-times close" aria-hidden="true" (click)="closePanel()"></i>
+    </div>
+    <ul>
+      <li [ngClass]="{'active':currentMenu=='home'}" (click)="onMenuClicked('home')">Home</li>
+      <li [ngClass]="{'active':currentMenu=='about'}" (click)="onMenuClicked('about')">About Us</li>
+      <li [ngClass]="{'active':currentMenu=='contact'}" (click)="onMenuClicked('contact')">Contact Us</li>
+    </ul>
+  </div>
+</div>

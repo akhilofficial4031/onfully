@@ -1,0 +1,41 @@
+<!-- <div class="top-bar">
+
+</div> -->
+<nav class="myNavbar" #stickyMenu [ngClass]="{'sticky':sticky,'padding-24':!sticky}">
+  <div class="nav-main">
+    <div class="container-fluid">
+      <div class="row p-0">
+        <div class="col-6 col-sm-6 px-0">
+          <div class="nav-brand">
+            <img src="assets/images/onfully-logo.png" class="logoImage" />
+            <!-- <span>Onfully</span> -->
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 p-0 pt-1">
+          <div class="nav-menu sm-0">
+            <ul>
+              <!-- <li class="nav-item">
+                <a class="nav-link" [ngClass]="{'navlink-active':currentMenu=='home'}"
+                  (click)="onMenuClicked('home')">Home</a>
+              </li> -->
+              <li class="nav-item" [ngClass]="{'active':currentMenu=='home'}" [routerLink]="['/']">
+                <a class="nav-link" >Home</a>
+              </li>
+              <li class="nav-item" [ngClass]="{'active':currentMenu=='about'}" [routerLink]="['/about']">
+                <a class="nav-link" >About Us</a>
+              </li>
+              <li class="nav-item" [ngClass]="{'active':currentMenu=='contact'}" [routerLink]="['/contact']">
+                <a class="nav-link" >Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="sm-only text-right">
+            <button type="button" class="transparent-btn toggle-btn" (click)="toggleNavbar()">
+              <img src="../../../../assets/images/menu-icon.png" class="menuIcon">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
